@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<title>Testal from Scratch</title>
+
+<link href="./tailwind.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+<body style="font-family: open sans">
+
+<section class="px-6 py-8">
+    <!--Navbar-->
+    <nav class="flex justify-between items-center">
+        <div>
+            <a href="/">
+                <img src="./images/logolang.png" alt="Banner Logo" width="165" height="16">
+            </a>
+        </div>
+
+        <div>
+            <a href="/" class="text-xs text-black font-bold uppercase">Zur Testal Homepage</a>
+            <a href="#" class="ml-3 rounded-full border border-black border-opacity-0 hover:border-opacity-10 text-xs font-semibold text-black uppercase py-5 px-3" style="background-color: #fbf4e1">Newsletter</a>
+        </div>
+    </nav>
+    <!--Main Artikel-->
+    <main class="max-w-6xl mx-auto mt-10 space-y-8">
+        <!--option mit hover:bg-beige testen, wenn die custom color funktioniert-->
+        <!--denk auch an die transition mit transition:background 300(ms)-->
+        <article class="rounded-xl border border-black border-opacity-0 hover:border-opacity-10" style="background-color: #fbf4e1">
+            <div class="py-6 px-5 flex">
+                <div class="flex-1 mr-8">
+                    <img src="./images/blogger-workspace-background-illustration-composition-flat-images-desktop-computer-web-camera-microphone-male-88884170.jpeg" alt="blog shit" class="rounded-xl">
+                </div>
+
+                <div class="flex-1 flex flex-col justify-between">
+                    <header>
+                        <div class="space-x-2">
+                            <a href="#" class="px-3 py-1 bg-gray-200 border border-black border-opacity-0 hover:border-opacity-10 rounded-full text-sm text-black uppercase font-semibold">Techniken</a>
+                            <a href="#" class="px-3 py-1 bg-gray-200 border border-black border-opacity-0 hover:border-opacity-10 rounded-full text-sm text-black uppercase font-semibold">Updates</a>
+                        </div>
+
+                        <div>
+                            <h1 class="mt-5 text-2xl">Hier werden später Informationen zu unseren Projekten stehen und das wird super, super toll!</h1>
+                            <span class="mt-2 block text-xs" style="color: #4f3c35">
+                                    Published
+                                        <time class="inline-block text-xs" style="color: #4f3c35">1 day ago</time>
+                                </span>
+
+                        </div>
+                    </header>
+
+                    <div class="text-sm mt-6">
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+                        <p class="mt-2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                    <footer class="flex justify-between items-center">
+                        <div class="flex items-center text-xs" style="color: #4f3c35">
+                            <span class="material-icons">
+                                face
+                            </span>
+                            <div class="mt-2">
+                                <h5 class="font-bold mt-1">Testal Engineering</h5>
+                                <h6>Mitarbeiter</h6>
+                            </div>
+                        </div>
+                        <!--REACT like button-->
+                        <div id="like_button_container" class="text-xs font-semibold bg-gray-200 border border-black border-opacity-0 hover:border-opacity-10 rounded-full py-2 px-3"></div>
+
+                        <div class="text-xs font-semibold bg-gray-200 border border-black border-opacity-0 hover:border-opacity-10 rounded-full py-2 px-3">
+                            <a href="#">Weiterlesen..</a>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </article>
+        <!--2er Grid-->
+        <div class="grid grid-cols-2">
+            <!--Artikel 1-->
+            <article class="rounded-xl border border-black border-opacity-0 hover:border-opacity-10" style="background-color: #fbf4e1">
+                <div class="py-6 px-5">
+                    <div class="flex-1 mx-auto">
+                        <img src="./images/blogger-isometric-icon-isometric-icon-blogger-making-educational-video-body-structure-d-vector-illustration-220147146.jpeg" alt="blog shit" class="rounded-xl">
+                    </div>
+
+                    <div class="mt-8 flex-1 flex flex-col justify-between">
+                        <header>
+                            <div class="space-x-2">
+                                <a href="#" class="px-3 py-1 bg-gray-200 rounded-full border border-black border-opacity-0 hover:border-opacity-10 text-sm text-black uppercase font-semibold">Techniken</a>
+                                <a href="#" class="px-3 py-1 bg-gray-200 rounded-full border border-black border-opacity-0 hover:border-opacity-10 text-sm text-black uppercase font-semibold">Updates</a>
+                            </div>
+
+                            <div>
+                                <h1 class="mt-5 text-2xl">Hier werden später Informationen zu unseren Projekten stehen und das wird super, super toll!</h1>
+                                <span class="mt-2 block text-xs" style="color: #4f3c35">
+                                    Published
+                                        <time class="inline-block text-xs" style="color: #4f3c35">1 day ago</time>
+                                </span>
+
+                            </div>
+                        </header>
+
+                        <div class="text-sm mt-6">
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+                            <p class="mt-2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                        </div>
+
+                        <footer class="flex justify-between items-center">
+                            <div class="flex items-center text-xs" style="color: #4f3c35">
+                            <span class="material-icons">
+                                face
+                            </span>
+                                <div class="mt-2">
+                                    <h5 class="font-bold mt-1">Testal Engineering</h5>
+                                    <h6>Mitarbeiter</h6>
+                                </div>
+                            </div>
+                            <!--Warum kann ich nicht einfach die Klasse verwenden-->
+                            <!--<div class="LikeButton"></div>-->
+                            <div class="text-xs font-semibold border border-black border-opacity-0 hover:border-opacity-10 bg-gray-200 rounded-full py-2 px-3">
+                                <a href="#">Weiterlesen..</a>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </article>
+            <!--Artikel 2-->
+            <article class="rounded-xl border border-black border-opacity-0 hover:border-opacity-10" style="background-color: #fbf4e1">
+                <div class="py-6 px-5">
+                    <div class="flex-1 mx-auto">
+                        <img src="./images/blogger-isometric-icon-isometric-icon-blogger-making-educational-video-body-structure-d-vector-illustration-220147146.jpeg" alt="blog shit" class="rounded-xl">
+                    </div>
+
+                    <div class="mt-8 flex-1 flex flex-col justify-between">
+                        <header>
+                            <div class="space-x-2">
+                                <a href="#" class="px-3 py-1 bg-gray-200 rounded-full border border-black border-opacity-0 hover:border-opacity-10 text-sm text-black uppercase font-semibold">Techniken</a>
+                                <a href="#" class="px-3 py-1 bg-gray-200 rounded-full border border-black border-opacity-0 hover:border-opacity-10 text-sm text-black uppercase font-semibold">Updates</a>
+                            </div>
+
+                            <div>
+                                <h1 class="mt-5 text-2xl">Hier werden später Informationen zu unseren Projekten stehen und das wird super, super toll!</h1>
+                                <span class="mt-2 block text-xs" style="color: #4f3c35">
+                                    Published
+                                        <time class="inline-block text-xs" style="color: #4f3c35">1 day ago</time>
+                                </span>
+
+                            </div>
+                        </header>
+
+                        <div class="text-sm mt-6">
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+                            <p class="mt-2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                        </div>
+
+                        <footer class="flex justify-between items-center">
+                            <div class="flex items-center text-xs" style="color: #4f3c35">
+                            <span class="material-icons">
+                                face
+                            </span>
+                                <div class="mt-2">
+                                    <h5 class="font-bold mt-1">Testal Engineering</h5>
+                                    <h6>Mitarbeiter</h6>
+                                </div>
+                            </div>
+
+                            <div class="text-xs font-semibold border border-black border-opacity-0 hover:border-opacity-10 bg-gray-200 rounded-full py-2 px-3">
+                                <a href="#">Weiterlesen..</a>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <!--3er Grid-->
+        <div class="grid grid-cols-3">
+            <!--Artikel 1-->
+            <article class="rounded-xl border border-black border-opacity-0 hover:border-opacity-10" style="background-color: #fbf4e1">
+                <div class="py-6 px-5">
+                    <div class="flex-1 mx-auto">
+                        <img src="./images/laptop-boy-blogger-design-icon-blog-network-multimedia-technology-social-media-communication-theme-vector-illustration-80995668.jpeg" alt="blog shit" class="rounded-xl">
+                    </div>
+
+                    <div class="mt-8 flex-1 flex flex-col justify-between">
+                        <header>
+                            <div class="space-x-2">
+                                <a href="#" class="px-3 py-1 bg-gray-200 rounded-full border border-black border-opacity-0 hover:border-opacity-10 text-sm text-black uppercase font-semibold">Techniken</a>
+                                <a href="#" class="px-3 py-1 bg-gray-200 rounded-full border border-black border-opacity-0 hover:border-opacity-10 text-sm text-black uppercase font-semibold">Updates</a>
+                            </div>
+
+                            <div>
+                                <h1 class="mt-5 text-2xl">Hier werden später Informationen zu unseren Projekten stehen und das wird super, super toll!</h1>
+                                <span class="mt-2 block text-xs" style="color: #4f3c35">
+                                    Published
+                                        <time class="inline-block text-xs" style="color: #4f3c35">1 day ago</time>
+                                </span>
+
+                            </div>
+                        </header>
+
+                        <div class="text-sm mt-6">
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+                            <p class="mt-2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                        </div>
+
+                        <footer class="flex justify-between items-center">
+                            <div class="flex items-center text-xs" style="color: #4f3c35">
+                            <span class="material-icons">
+                                face
+                            </span>
+                                <div class="mt-2">
+                                    <h5 class="font-bold mt-1">Testal Engineering</h5>
+                                    <h6>Mitarbeiter</h6>
+                                </div>
+                            </div>
+
+                            <div class="text-xs font-semibold border border-black border-opacity-0 hover:border-opacity-10 bg-gray-200 rounded-full py-2 px-3">
+                                <a href="#">Weiterlesen..</a>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </article>
+            <!--Artikel 2-->
+            <article class="rounded-xl border border-black border-opacity-0 hover:border-opacity-10" style="background-color: #fbf4e1">
+                <div class="py-6 px-5">
+                    <div class="flex-1 mx-auto">
+                        <img src="./images/laptop-boy-blogger-design-icon-blog-network-multimedia-technology-social-media-communication-theme-vector-illustration-80995668.jpeg" alt="blog shit" class="rounded-xl">
+                    </div>
+
+                    <div class="mt-8 flex-1 flex flex-col justify-between">
+                        <header>
+                            <div class="space-x-2">
+                                <a href="#" class="px-3 py-1 bg-gray-200 rounded-full border border-black border-opacity-0 hover:border-opacity-10 text-sm text-black uppercase font-semibold">Techniken</a>
+                                <a href="#" class="px-3 py-1 bg-gray-200 rounded-full border border-black border-opacity-0 hover:border-opacity-10 text-sm text-black uppercase font-semibold">Updates</a>
+                            </div>
+
+                            <div>
+                                <h1 class="mt-5 text-2xl">Hier werden später Informationen zu unseren Projekten stehen und das wird super, super toll!</h1>
+                                <span class="mt-2 block text-xs" style="color: #4f3c35">
+                                    Published
+                                        <time class="inline-block text-xs" style="color: #4f3c35">1 day ago</time>
+                                </span>
+
+                            </div>
+                        </header>
+
+                        <div class="text-sm mt-6">
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+                            <p class="mt-2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                        </div>
+
+                        <footer class="flex justify-between items-center">
+                            <div class="flex items-center text-xs" style="color: #4f3c35">
+                            <span class="material-icons">
+                                face
+                            </span>
+                                <div class="mt-2">
+                                    <h5 class="font-bold mt-1">Testal Engineering</h5>
+                                    <h6>Mitarbeiter</h6>
+                                </div>
+                            </div>
+
+                            <div class="text-xs font-semibold border border-black border-opacity-0 hover:border-opacity-10 bg-gray-200 rounded-full py-2 px-3">
+                                <a href="#">Weiterlesen..</a>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </article>
+            <!--Artikel 3-->
+            <article class="rounded-xl border border-black border-opacity-0 hover:border-opacity-10" style="background-color: #fbf4e1">
+                <div class="py-6 px-5">
+                    <div class="flex-1 mx-auto">
+                        <img src="./images/laptop-boy-blogger-design-icon-blog-network-multimedia-technology-social-media-communication-theme-vector-illustration-80995668.jpeg" alt="blog shit" class="rounded-xl">
+                    </div>
+
+                    <div class="mt-8 flex-1 flex flex-col justify-between">
+                        <header>
+                            <div class="space-x-2">
+                                <a href="#" class="px-3 py-1 bg-gray-200 rounded-full border border-black border-opacity-0 hover:border-opacity-10 text-sm text-black uppercase font-semibold">Techniken</a>
+                                <a href="#" class="px-3 py-1 bg-gray-200 rounded-full border border-black border-opacity-0 hover:border-opacity-10 text-sm text-black uppercase font-semibold">Updates</a>
+                            </div>
+
+                            <div>
+                                <h1 class="mt-5 text-2xl">Hier werden später Informationen zu unseren Projekten stehen und das wird super, super toll!</h1>
+                                <span class="mt-2 block text-xs" style="color: #4f3c35">
+                                    Published
+                                        <time class="inline-block text-xs" style="color: #4f3c35">1 day ago</time>
+                                </span>
+
+                            </div>
+                        </header>
+
+                        <div class="text-sm mt-6">
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+                            <p class="mt-2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                        </div>
+
+                        <footer class="flex justify-between items-center">
+                            <div class="flex items-center text-xs" style="color: #4f3c35">
+                            <span class="material-icons">
+                                face
+                            </span>
+                                <div class="mt-2">
+                                    <h5 class="font-bold mt-1">Testal Engineering</h5>
+                                    <h6>Mitarbeiter</h6>
+                                </div>
+                            </div>
+
+                            <div class="text-xs font-semibold border border-black border-opacity-0 hover:border-opacity-10 bg-gray-200 rounded-full py-2 px-3">
+                                <a href="#">Weiterlesen..</a>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer class="border border-black border-opacity-0 hover:border-opacity-5 rounded-xl text-center py-16 px-10 mt-10" style="background-color: #fbf4e1">
+        <img src="./images/logolang.png" alt="Testal Engineering Logo" class="mx-auto" style="width: 250px">
+        <h5 class="text-3xl font-semibold mt-8">Bleiben Sie informiert über unseren neuen Projekte</h5>
+        <p class="mt-6">Für allgemeine Fragen, Terminanfragen und Angebote nutzen Sie bitte das Kontaktformular</p>
+
+        <div class="mt-6">
+            <div class="relative inline-block mx-auto bg-white border border-black border-opacity-0 hover:border-opacity-5 -py-3 rounded-full">
+                <form method="post" action="#" class="flex text-m">
+                    <div class="py-3 px-5 inline-flex items-center">
+                        <img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-email-interface-kiranshastry-lineal-kiranshastry.png" class="mr-3"/>
+                        <input id="email" type="text" placeholder="Hier eMail eintragen..">
+                        <button type="submit" class="bg-white ml-3 rounded-xl text-white text-xs font-semibold uppercase py-3 px-5" style="background-color: #4f3c35">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="mt-8 mb-8">
+            <a href="https://icons8.com/icon/kMNXvzAiDvzO/email">Email icon by Icons8</a>
+        </div>
+    </footer>
+</section>
+
+<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+<!-- Load our React component. -->
+<script src="like_button.js"></script>
+</body>
+
+</html>
